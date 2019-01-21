@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.min.css">
 </head>
 <body> 
-	<header>
-		<div class="top">
+	<header class="head">
+		<div class="head-top">
 			<div class="container"> 
-				<nav class="navbar navbar-expand-md navbar-default bg-default justify-content-between align-items-start p-0 "> 
+				<nav class="navbar navbar-expand-md navbar-default bg-default justify-content-between align-items-start p-0 ">
 					<a class="navbar-brand" href="#">
 						<img src="images/logo.png" class="d-inline-block align-top" alt="Booking Hotel">
 					</a>
@@ -40,7 +40,7 @@
 								<a class="dropdown-item" href="#"><i class="flag-sp"></i> SP</a>
 							</div>
 							</li>
-							<li class="nav-item dropdown">
+							<li class="nav-item dropdown pr-3">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarCurrDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							USD ($)
 							</a>
@@ -74,27 +74,93 @@
 					</div>
 				</div>
 				<div class="search-block">
-					<form class="container">
-						<div class="row">
+					<form>
+						<div class="row"> 
 							<div class="col-12 col-sm-6 col-xl-4 pl-xl-0">
-								<input class="form-control" type="text" placeholder="Auckland, New Zealand" aria-label="Location">
+								<label class="sr-only" for="seachInput1">Location</label>
+								<input type="text" class="form-control" id="seachInput1" placeholder="Auckland, New Zealand">
 							</div>
 							<div class="col-12 col-sm-6 col-xl-3 pl-xl-0">
-								<input type="text" class="form-control date-picker" placeholder="January 09" aria-label="Date">
+								<label class="sr-only" for="seachInput2">Date</label>
+								<div class="input-group">
+									<input type="text" class="form-control date-picker" id="seachInput2" placeholder="January 09">
+									<div class="input-group-prepend">
+										<div class="input-group-text"><span class="icon-date"></span></div>
+									</div> 
+								</div> 
 							</div>
 							<div class="col-12 col-sm-6 col-xl-3 pl-xl-0">
-								<input class="form-control" type="text" placeholder="2 Adults & 3 kids" aria-label="People">
-							</div>
-							<div class="col-12 col-sm-6 col-xl-2 pl-xl-0 pr-xl-xl-0">
-								<button class="btn-sm btn-warning btn-block rounded-0" type="submit"><i class="icon-search"></i> Search</button>
-							</div>
-						</div>  
-					</form>
+								<label class="sr-only" for="seachInput3">People</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="seachInput3" placeholder="2 Adults & 3 kids">
+									<div class="input-group-prepend">
+										<div class="input-group-text"><span class="icon-users"></span></div>
+									</div> 
+								</div>
+							</div> 
+							<div class="col-12 col-sm-6 col-xl-2 pl-xl-0 pr-xl-0">
+								<button type="submit" class="btn-sm btn-warning  rounded-1"><i class="icon-search"></i> Search</button>
+							</div> 
+						</div>
+					</form>  
 				</div>
 			</div>
 		</div>
 	</header>
-
+	
+	<main class="container">
+		<div class="row">
+			<section class="main col-md-9">
+				<div class="main-filter">
+					<nav class="navbar navbar-expand-md p-0">
+						<div class="flex-grow-0 flex-column">
+							<ul class="navbar-nav pr-4">
+								<li class="nav-item dropdown">
+									<a class="nav-link pl-4 pr-5 dropdown-toggle" href="#" id="mainFilter1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									sort by:
+								</a>
+								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="mainFilter1">
+									<a class="dropdown-item" href="#">price</a>
+									<a class="dropdown-item" href="#">rating</a>
+									<a class="dropdown-item" href="#">name</a>
+								</div>
+								</li>
+								<li class="nav-item dropdown ml-5">
+									<a class="nav-link pl-4 pr-5 dropdown-toggle" href="#" id="mainFilter2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									room type
+								</a>
+								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="mainFilter2">
+									<a class="dropdown-item" href="#">beach</a>
+									<a class="dropdown-item" href="#">romantic</a>
+									<a class="dropdown-item" href="#">family</a>
+								</div>
+								</li> 
+							</ul> 
+						</div> 
+					</nav>
+				</div>
+				<div class="main-info d-flex align-items-center justify-content-around">
+					<h4>Auckland</h4>
+					<h5><span>108</span> hotels available</h5>
+					<a href="#" class="main-info-btn btn-xs btn-success rounded-1">Compare Shortlist Hotel</a>
+					<div class="main-info-control d-flex align-items-center justify-content-around">
+						<div class="control-item">
+							<a href="#"><i class="icon-view_list"></i></a>
+						</div>
+						<div class="control-item active">
+							<a href="#"><span>List</span> <i class="icon-view_grid"></i></a>
+						</div>
+						<div class="control-item">
+							<a href="#"><i class="icon-location"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<aside class="col-md-3">
+				2
+			</aside>
+		</div>
+	</main>
 
 	<script src="js/main.js"></script>
 	<script src="../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>

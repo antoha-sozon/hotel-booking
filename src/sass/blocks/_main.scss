@@ -1,0 +1,92 @@
+.main-filter {
+	.nav-link {
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    padding-right: 50px;
+	    font-weight: bold;
+	    padding-left: 20px;	
+	    &:after {
+	    	font-size: 20px;
+    	}
+    }
+    .dropdown-menu {
+		background-color: $gray-500;
+		border-color: $gray-500;
+		border-radius: 0 0 5px 5px; 
+	    width: 100%;
+    	text-align: center;
+    }  
+    .dropdown-item {
+		text-transform: uppercase;
+		font-size: 15px;
+		padding: 5px 20px;
+	} 
+	.navbar-nav {
+		background-color: $gray-500;
+		border-radius: 10px 10px 0 0;  
+	}
+} 
+
+.main-info {
+	background-color: rgba($gray-100, .2);
+	border-radius: 0 10px 10px 10px; 
+	padding: 15px;
+	margin-bottom: 40px;
+	border-top: 6px solid $gray-500;
+	margin-top: -6px;  
+	box-shadow: -2px 2px 6px $gray-100; 
+	h4 {
+		padding: 0;
+		margin: 0;
+		font-size: 23px;
+		color: $orange;
+	} 
+	h5 {
+		padding: 0;
+		margin: 0;
+		font-size: 14px;
+		color: $gray-500;
+		font-weight: normal;
+		span {
+			font-size: 23px;
+			font-weight: bold;
+		}
+	}
+
+}
+.main-info-btn {
+	background: linear-gradient(to bottom, #99cd5a 0%,#59bf63 100%);
+	font-size: 14px;
+	color: $white;
+	padding: 0 20px 0 10px;
+	border-radius: 3px; 
+	&:hover {
+		background: linear-gradient(to bottom,#59bf63  0%,#99cd5a 100%);
+		text-decoration: none;
+	} 
+}
+.main-info-control {
+		background-color: $gray-500;
+   		font-size: 14px;
+	   	color: $white; 
+	.control-item {
+		a {
+		    color: $white;
+		    font-size: 24px;
+		    padding: 5px 10px;
+		    text-decoration: none;
+		    line-height: 1;
+		    display: inline-block;
+		    vertical-align: middle;
+		    span {
+		    	font-size: 14px;
+			    display: inline-block;
+			    vertical-align: middle;
+			    padding-bottom: 5px;
+		    }
+		}
+		&.active {
+			background-color: $orange;
+		}
+	}
+}
