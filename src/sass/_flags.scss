@@ -1,0 +1,44 @@
+[class^="flag-"], [class*=" flag-"] {
+    width: 24px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.flag-en {
+  background-image: url(images/flags/en.png);
+}
+.flag-fr {
+  background-image: url(images/flags/france.png);
+}
+.flag-gr {
+  background-image: url(images/flags/germany.png);
+}
+.flag-it {
+  background-image: url(images/flags/italy.png);
+}
+.flag-ja {
+  background-image: url(images/flags/japan.png);
+}
+.flag-ne {
+  background-image: url(images/flags/net.png);
+}
+.flag-no {
+  background-image: url(images/flags/norway.png);
+}
+.flag-po {
+  background-image: url(images/flags/portugal.png);
+}
+.flag-ru {
+  background-image: url(images/flags/russia.png);
+}
+.flag-sp {
+  background-image: url(images/flags/spain.png);
+}
+.flag-sw {
+  background-image: url(images/flags/sweden.png);
+}

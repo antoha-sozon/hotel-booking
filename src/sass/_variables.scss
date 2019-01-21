@@ -1,0 +1,74 @@
+//FONT
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+//COLORS
+$gray-100: #a5a5a5;
+$gray-500: #58585a;
+$gray-600: #2d2e34;
+$gray-700: #28292f;
+$gray-800: #3d3d3d; 
+$orange: #f58220;
+$white: #fff;
+$green: #89b933;
+
+//NAVBAR
+$navbar-nav-link-padding-x: 1rem;
+$nav-tabs-border-radius: 0 0 5px 5px; 
+
+//DROPDOWNS
+$dropdown-min-width: 1rem;
+$dropdown-bg: $gray-600;
+$dropdown-border-color: $gray-600;
+$dropdown-border-radius: 5px 0 5px 5px;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: darken($white, 5%);
+$dropdown-link-hover-bg: darken($gray-600, 5%);
+$dropdown-link-active-color: darken($white, 5%);
+$dropdown-link-active-bg: darken($gray-600, 5%);
+
+//GRID
+$grid-breakpoints: ();
+$grid-breakpoints: map-merge(
+  (
+    xs: 0,
+    sm: 350px,
+    md: 576px,
+    lg: 768px,
+    xl: 992px
+  ),
+  $grid-breakpoints
+);
+
+$container-max-widths: ();
+$container-max-widths: map-merge(
+  (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 960px
+  ),
+  $container-max-widths
+); 
+
+
+//FORM
+$input-font-size: 15px;
+$input-line-height: 15px;
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+$input-placeholder-color: $gray-100; 
+$input-padding-y: 5px;
+$input-padding-x: 20px;
+$input-padding-y-sm: 5px;
+$input-padding-x-sm: 20px;
+$input-padding-y-lg: 5px;
+$input-padding-x-lg: 20px;
+$input-height: auto;
+
+
+
+$btn-padding-y-sm: 5px;
+$btn-padding-x-sm: 20px;
+$btn-font-size-sm: 18px;
+$btn-line-height-sm: 18px;
