@@ -77,16 +77,129 @@
 		    text-decoration: none;
 		    line-height: 1;
 		    display: inline-block;
-		    vertical-align: middle;
+		    vertical-align: middle;  
+			&:hover span {
+				width: auto;
+				visibility: visible; 
+				padding-right: 5px;
+			}
 		    span {
 		    	font-size: 14px;
 			    display: inline-block;
 			    vertical-align: middle;
 			    padding-bottom: 5px;
-		    }
+			    width: 0;
+				visibility: hidden;
+				transition: width .4s;  
+		    }  
 		}
 		&.active {
-			background-color: $orange;
+			background-color: $orange; 
+			a span {
+				width: auto;
+				visibility: visible; 
+				padding-right: 5px;
+			}
 		}
 	}
 }
+
+.card {
+    box-shadow: -1px 1px 4px #a5a5a5;
+    &-title {
+		font-size: 16px;
+		color: $gray-500;
+		line-height: 40px;
+		padding: 0;
+		margin: 0 0 5px 0;
+		text-align: center;
+		font-weight: bold;
+		border-bottom: 3px solid $gray-500;
+	}
+	&-img {
+		border-radius: 0;
+	}
+	&-image {
+		position: relative;
+		margin: 3px 3px 13px 3px;
+	}
+	&-body-info { 
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		a {
+			color: $white;  
+			padding-right: 10px;
+			&:hover {
+				color: $orange;
+				text-decoration: none;
+			}
+		}
+		.bg-darkes {
+			background-color: rgba($black, .5);
+			padding: 5px;
+		}
+		.reviews {
+			color: $orange;
+			font-size: 13px;
+		}
+	}
+}  
+
+.card-footer-info {
+	text-align: center;
+	p {
+		font-size: 14px;
+		color: $gray-500;
+		font-style: italic;
+    	white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		padding: 5px 10px;
+		margin: 0;
+	}
+	.price {
+		background-color: $gray;
+		border-radius: 10px;
+		padding: 10px 20px;
+		line-height: 1; 
+		color: $gray-500;
+		font-size: 15px;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 10px;
+		span {
+			font-size: 23px;
+			font-weight: bold;
+		}
+	}
+}
+
+.stars {
+	position: relative; 
+ 	direction: rtl;
+	span {
+		position: relative;
+		display: inline-block;
+  		position: relative;
+		width: 20px;
+		height: 20px;
+	    color: lighten($orange, 10%);
+	    font-size: 20px;
+	    line-height: 1;
+	    cursor: pointer;
+		&:before { 
+		    font-family: icomoon; 
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    color: lighten($orange, 10%);
+		    font-size: 20px;
+		}
+	}  
+	& > span:hover:before,
+	& > span:hover ~ span:before {
+	   content: "\e906";
+	   position: absolute;
+	}
+} 

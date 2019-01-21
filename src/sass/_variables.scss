@@ -2,6 +2,7 @@
 $font-family-sans-serif: 'Roboto', sans-serif;
 
 //COLORS
+$gray: #e1e1e1;
 $gray-100: #a5a5a5;
 $gray-500: #58585a;
 $gray-600: #2d2e34;
@@ -10,6 +11,7 @@ $gray-800: #3d3d3d;
 $orange: #f58220;
 $white: #fff;
 $green: #89b933;
+$black: #000000;
 
 //NAVBAR
 $navbar-nav-link-padding-x: 1rem;
@@ -72,3 +74,7 @@ $btn-padding-y-sm: 5px;
 $btn-padding-x-sm: 20px;
 $btn-font-size-sm: 18px;
 $btn-line-height-sm: 18px;  
+
+//CARDS
+$card-border-radius:  10px;
+$card-group-margin: 10px;
