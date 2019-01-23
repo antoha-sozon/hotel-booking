@@ -1,0 +1,64 @@
+aside {
+	padding-top: 74px;
+	.card {
+		&-item {
+			padding: .5rem;
+		    border-bottom: 1px solid $gray;
+		    h5{
+		    	font-size: 13px;
+		    	margin: 0;
+		    }
+		    dd {
+		    	margin: 0;
+		    }
+		    &:last-child {
+				border-bottom: none;
+		    }
+		} 
+	}
+	.slider.slider-horizontal {
+		width: 100%;
+	    margin-top: 20px;
+		.slider-track {
+		    background: linear-gradient(to bottom, lighten($orange, 10%) 0%, $orange 100%); 
+		    height: 6px;
+		    border: 1px solid #f0600b;
+		    .slider-selection {
+		    	background: linear-gradient(to bottom, $orange 0%,  lighten($orange, 10%) 100%); 
+		    }
+		}
+		.tooltip.top {
+			margin-top: -25px;
+		}
+	    .tooltip-inner {
+	    	background-color: transparent;
+	    	color: $orange;
+	    	font-size: 12px;
+	    	font-weight: bold;
+	    }
+		.tooltip.in {
+			opacity: 1;
+		}
+	}
+	.slider-handle.round {
+	    left: 26.2626%;
+	    width: 16px;
+	    height: 16px;
+	    margin-left: -8px;
+	    background: #fff;
+	    border: 1px solid #e1e1e1; 
+	    &:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 2px;
+			height: 2px;
+			margin-top: -1px;
+			margin-left: -1px;
+			border-radius: 50%;
+			background-color: $gray-700;
+	    }
+	}
+}
+

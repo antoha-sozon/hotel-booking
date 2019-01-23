@@ -1,7 +1,11 @@
 @import "variables";
 
+@import "../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+@import "../../node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css";
+
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/utilities";
+
 @import "../../node_modules/bootstrap/scss/grid"; 
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
@@ -10,10 +14,12 @@
 @import "../../node_modules/bootstrap/scss/input-group";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/card";
-
-@import "../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+@import "../../node_modules/bootstrap/scss/tooltip"; 
 
 @import "fonts";
 @import "flags";
+@import "blocks/stars"; 
 @import "blocks/header";
 @import "blocks/main"; 
+@import "blocks/cards";
+@import "blocks/aside"; 

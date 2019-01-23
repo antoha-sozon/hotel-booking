@@ -1,0 +1,74 @@
+.stars { 
+ 	direction: rtl;
+ 	height: 20px;
+	span {
+		position: relative;
+		display: inline-block;
+  		position: relative;
+		width: 20px;
+		height: 20px;
+	    color: $orange;
+	    font-size: 20px;
+	    line-height: 1;
+	    cursor: pointer;
+		&:after,
+		&:before { 
+			content: "\e905";
+			position: absolute;
+		    font-family: icomoon; 
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    color: lighten($orange, 10%);
+		    font-size: 20px;
+		    transition: opacity .3s ease;
+		}
+		&:before { 
+			content: "\e906"; 
+			opacity: 0;
+			color: $orange;
+		}
+	}  
+	
+	& > span.active ~ span:before, 
+	& > span:hover:before,
+	& > span:hover ~ span:before {
+	   opacity: 1;
+	}
+} 
+
+.blocks { 
+ 	direction: rtl;
+ 	height: 20px;
+	span {
+		position: relative;
+		display: inline-block;
+  		position: relative;
+		width: 20px;
+		height: 20px; 
+	    cursor: pointer;
+		&:after,
+		&:before { 
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 16px; 
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    transition: opacity .3s ease;
+		    border: 1px solid $orange;
+		}
+		&:before { 
+			content: ""; 
+			opacity: 0;
+		    background-color: $orange;
+		}
+	}  
+	
+	& > span.active ~ span:before, 
+	& > span:hover:before,
+	& > span:hover ~ span:before {
+	   opacity: 1;
+	}
+} 
